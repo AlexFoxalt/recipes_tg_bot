@@ -17,6 +17,8 @@ from openai import AsyncOpenAI
 
 load_dotenv()
 
+logger = logging.getLogger(__name__)
+
 BASE_DIR = Path(__file__).resolve().parent
 RECIPES_PATH = BASE_DIR / "recipes.json"
 
@@ -25,6 +27,8 @@ with RECIPES_PATH.open("r", encoding="utf-8") as f:
 
 if not isinstance(RECIPES, list) or not RECIPES:
     raise RuntimeError("recipes.json must contain a non-empty list of recipes")
+
+logger.info("Loaded %d recipes from %s", len(RECIPES), RECIPES_PATH)
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -49,6 +53,11 @@ async def start_handler(message: types.Message) -> None:
     """
     Handle /start command and show the main button.
     """
+    logger.info(
+        "User %s (%s) started the bot",
+        message.from_user.id if message.from_user else "unknown",
+        message.from_user.username if message.from_user else "unknown",
+    )
     await message.answer(
         "Бот, який допоможе тобі вивчити всі рецепти.",
         reply_markup=MAIN_KEYBOARD,
@@ -61,7 +70,13 @@ async def handle_try_next(message: types.Message, state: FSMContext) -> None:
     - pick a random dish
     - ask user to write its recipe
     """
+    user_id = message.from_user.id if message.from_user else "unknown"
     dish = random.choice(RECIPES)
+    logger.info(
+        "User %s requested new dish: '%s'",
+        user_id,
+        dish.get("name"),
+    )
 
     # Store current dish in state for future extensions (e.g. checking answer)
     await state.update_data(current_dish_name=dish.get("name"))
@@ -80,7 +95,16 @@ async def evaluate_answer_with_model(
     Use OpenAI model to compare user's recipe with the official one and rate it.
     """
     if openai_client is None:
+        logger.error("OpenAI client is not initialized")
         return "Evaluation service is temporarily unavailable. Please try another dish later."
+
+    logger.info(
+        "Sending evaluation request to OpenAI for dish '%s'", dish_name
+    )
+    logger.debug(
+        "User recipe preview: %s",
+        (user_recipe[:120] + "...") if len(user_recipe) > 120 else user_recipe,
+    )
 
     prompt = """
     Ти – експерт-шеф-кухар, який проводить тести для відбору кухарів у ресторан.
@@ -107,28 +131,43 @@ async def evaluate_answer_with_model(
     Проаналізуй та сформуй підсумок згідно з правилами.
     """
     prompt = prompt.format(
-        dish_name=dish_name, official_recipe=official_recipe, user_recipe=user_recipe, price=price, weight=weight
-    )
-    response = await openai_client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {
-                "role": "system",
-                "content": "Ви лаконічний, суворий оцінювач рецептів.",
-            },
-            {"role": "user", "content": prompt},
-        ],
-        max_tokens=200,
-        temperature=0.3,
+        dish_name=dish_name,
+        official_recipe=official_recipe,
+        user_recipe=user_recipe,
+        price=price,
+        weight=weight,
     )
 
-    return (response.choices[0].message.content or "").strip()
+    try:
+        response = await openai_client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "Ви лаконічний, суворий оцінювач рецептів.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+            max_tokens=200,
+            temperature=0.3,
+        )
+    except Exception as exc:  # noqa: BLE001
+        logger.exception("OpenAI evaluation failed: %s", exc)
+        return (
+            "Не вдалося отримати оцінку від моделі. "
+            "Спробуй, будь ласка, іншу страву трохи пізніше."
+        )
+
+    content = (response.choices[0].message.content or "").strip()
+    logger.debug("OpenAI evaluation response: %s", content)
+    return content
 
 
 async def handle_answer(message: types.Message, state: FSMContext) -> None:
     """
     Handle user's recipe answer.
     """
+    user_id = message.from_user.id if message.from_user else "unknown"
     data = await state.get_data()
     dish_name = data.get("current_dish_name")
 
@@ -137,6 +176,11 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
         dish = next((d for d in RECIPES if d.get("name") == dish_name), None)
 
     if not dish:
+        logger.warning(
+            "Dish not found in state for user %s (state dish_name=%r)",
+            user_id,
+            dish_name,
+        )
         # Fallback if we, for some reason, lost the dish in state
         await message.answer(
             "I couldn't find the official recipe this time, but you can try another dish.",
@@ -147,6 +191,12 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
 
     official_recipe = dish.get("recipe") or "No recipe description available."
     user_recipe = message.text or ""
+
+    logger.info(
+        "Evaluating answer from user %s for dish '%s'",
+        user_id,
+        dish.get("name", "Unknown dish"),
+    )
 
     evaluation = await evaluate_answer_with_model(
         dish.get("name", "Unknown dish"),
@@ -160,16 +210,27 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
 
     # Send only model response and image (if available)
     if image_url:
+        logger.debug(
+            "Sending evaluation with image for dish '%s' to user %s",
+            dish.get("name"),
+            user_id,
+        )
         await message.answer_photo(
             photo=image_url,
             caption=evaluation,
             reply_markup=MAIN_KEYBOARD,
         )
     else:
+        logger.debug(
+            "Sending evaluation without image for dish '%s' to user %s",
+            dish.get("name"),
+            user_id,
+        )
         await message.answer(evaluation, reply_markup=MAIN_KEYBOARD)
 
     # Clear state so user can start a new round by pressing the button again
     await state.clear()
+    logger.info("Cleared state for user %s after evaluation", user_id)
 
 
 async def main() -> None:
@@ -182,21 +243,28 @@ async def main() -> None:
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     )
 
+    logger.info("Starting Telegram recipes quiz bot")
+
     if not TELEGRAM_BOT_TOKEN:
+        logger.error("TELEGRAM_BOT_TOKEN is not set in the environment")
         raise RuntimeError("TELEGRAM_BOT_TOKEN is not set in the environment")
     if not OPENAI_API_KEY:
+        logger.error("OPENAI_API_KEY is not set in the environment")
         raise RuntimeError("OPENAI_API_KEY is not set in the environment")
 
     global openai_client
     openai_client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+    logger.info("OpenAI client initialized successfully")
 
     bot = Bot(token=TELEGRAM_BOT_TOKEN)
     dp = Dispatcher(storage=MemoryStorage())
+    logger.info("Aiogram Dispatcher and Bot initialized")
 
     # Register handlers
     dp.message.register(start_handler, CommandStart())
     dp.message.register(handle_try_next, F.text == TRY_NEXT_BUTTON_TEXT)
     dp.message.register(handle_answer, QuizStates.waiting_for_answer)
+    logger.info("Handlers registered; starting polling")
 
     # Start polling
     await dp.start_polling(bot)
