@@ -73,7 +73,7 @@ async def handle_try_next(message: types.Message, state: FSMContext) -> None:
 
 
 async def evaluate_answer_with_model(
-    dish_name: str, official_recipe: str, user_recipe: str
+    dish_name: str, official_recipe: str, user_recipe: str, price: str, weight: str
 ) -> str:
     """
     Use OpenAI model to compare user's recipe with the official one and rate it.
@@ -95,17 +95,20 @@ async def evaluate_answer_with_model(
     3) Формат відповіді — стисло, у стилі Telegram: 4–5 коротких речень.
     4) Виділяй головні розбіжності, пропуски або помилки.
     5) Завжди додавай окремим рядком: 📍 Оцінка: X/10 (ціле число, де 10 = майже ідентичний).
-    6) (ОПЦІОНАЛЬНО) Якщо можливо, дай одну дуже коротку, практичну пораду, як краще запам’ятати саме цей рецепт (без абстракцій). Відокрем її від основного тексту ньюлайнами та кількома тире (---)
-
+    6) Також я надам тобі інформацію про вартість страви (в українських гривнях) та її вагу (у грамах). Можеш використовувати цю інформацію у своїй генерації.
+    7) (ОПЦІОНАЛЬНО) Якщо можливо, дай одну дуже коротку, практичну пораду, як краще запам’ятати саме цей рецепт (без абстракцій). Відокрем її від основного тексту ньюлайнами та кількома тире (---)
+    
     Вхідні дані:
     - Назва страви: {dish_name}
     - Офіційний рецепт: {official_recipe}
     - Рецепт кандидата: {user_recipe}
+    - Вартість (у гривнях): {price}
+    - Вага (у грамах): {weight}
 
     Завдання:
     Проаналізуй та сформуй підсумок згідно з правилами.
     """
-    prompt = prompt.format(dish_name=dish_name, official_recipe=official_recipe, user_recipe=user_recipe)
+    prompt = prompt.format(dish_name=dish_name, official_recipe=official_recipe, user_recipe=user_recipe, price=price, weight=weight)
     response = await openai_client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
@@ -150,6 +153,8 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
         dish.get("name", "Unknown dish"),
         official_recipe,
         user_recipe,
+        dish.get("price", "Unknown price"),
+        dish.get("weight", "Unknown weight"),
     )
 
     image_url = dish.get("image_url")
