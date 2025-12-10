@@ -1,3 +1,4 @@
+
 from dotenv import load_dotenv
 import asyncio
 import json
@@ -79,10 +80,7 @@ async def evaluate_answer_with_model(
     Use OpenAI model to compare user's recipe with the official one and rate it.
     """
     if openai_client is None:
-        return (
-            "Evaluation service is temporarily unavailable. "
-            "Please try another dish later."
-        )
+        return "Evaluation service is temporarily unavailable. Please try another dish later."
 
     prompt = """
     Ти – експерт-шеф-кухар, який проводить тести для відбору кухарів у ресторан.
@@ -95,7 +93,7 @@ async def evaluate_answer_with_model(
     3) Формат відповіді — стисло, у стилі Telegram: 4–5 коротких речень.
     4) Виділяй головні розбіжності, пропуски або помилки.
     5) Завжди додавай окремим рядком: 📍 Оцінка: X/10 (ціле число, де 10 = майже ідентичний).
-    6) Також я надам тобі інформацію про вартість страви (в українських гривнях) та її вагу (у грамах). Можеш використовувати цю інформацію у своїй генерації.
+    6) Також я надам тобі інформацію про вартість страви (в українських гривнях) та її вагу (у грамах). Можеш використовувати цю інформацію у своїй генерації. Наприклад, вивести інформацію після оцінки у вигляді (кожен параметр з нового рядка): 💵Ціна: <price>грн. \n ⚖️Вага: <weight>г.
     7) (ОПЦІОНАЛЬНО) Якщо можливо, дай одну дуже коротку, практичну пораду, як краще запам’ятати саме цей рецепт (без абстракцій). Відокрем її від основного тексту ньюлайнами та кількома тире (---)
     
     Вхідні дані:
@@ -108,7 +106,9 @@ async def evaluate_answer_with_model(
     Завдання:
     Проаналізуй та сформуй підсумок згідно з правилами.
     """
-    prompt = prompt.format(dish_name=dish_name, official_recipe=official_recipe, user_recipe=user_recipe, price=price, weight=weight)
+    prompt = prompt.format(
+        dish_name=dish_name, official_recipe=official_recipe, user_recipe=user_recipe, price=price, weight=weight
+    )
     response = await openai_client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
@@ -139,8 +139,7 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
     if not dish:
         # Fallback if we, for some reason, lost the dish in state
         await message.answer(
-            "I couldn't find the official recipe this time, "
-            "but you can try another dish.",
+            "I couldn't find the official recipe this time, but you can try another dish.",
             reply_markup=MAIN_KEYBOARD,
         )
         await state.clear()

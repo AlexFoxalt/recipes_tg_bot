@@ -1,10 +1,9 @@
 import json
-import pdb
 
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://moondeer.choiceqr.com/section:menyu"   # your real menu URL
+url = "https://moondeer.choiceqr.com/section:menyu"  # your real menu URL
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
@@ -42,7 +41,7 @@ for item in menu_items:
         "recipe": description,
         "price": price,
         "weight": f"{weight}{weight_type}" if weight and weight_type else None,
-        "image_url": image_url
+        "image_url": image_url,
     }
 
     recipes.append(recipe)
