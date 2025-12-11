@@ -1,4 +1,3 @@
-
 from dotenv import load_dotenv
 import asyncio
 import json
@@ -12,8 +11,10 @@ from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.enums import ParseMode
 from openai import AsyncOpenAI
 
+from prompts import SYSTEM_PROMPT, USER_PROMPT
 
 load_dotenv()
 
@@ -33,7 +34,7 @@ logger.info("Loaded %d recipes from %s", len(RECIPES), RECIPES_PATH)
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-TRY_NEXT_BUTTON_TEXT = "Нова страва"
+TRY_NEXT_BUTTON_TEXT = "Новое блюдо"
 
 MAIN_KEYBOARD = types.ReplyKeyboardMarkup(
     keyboard=[[types.KeyboardButton(text=TRY_NEXT_BUTTON_TEXT)]],
@@ -59,7 +60,7 @@ async def start_handler(message: types.Message) -> None:
         message.from_user.username if message.from_user else "unknown",
     )
     await message.answer(
-        "Бот, який допоможе тобі вивчити всі рецепти.",
+        "Нажимай кнопку снизу, чтобы начать тест.",
         reply_markup=MAIN_KEYBOARD,
     )
 
@@ -83,7 +84,7 @@ async def handle_try_next(message: types.Message, state: FSMContext) -> None:
     await state.set_state(QuizStates.waiting_for_answer)
 
     await message.answer(
-        f"Страва: {dish.get('name')}\n\nБудь ласка, напишіть його рецепт.",
+        f"Блюдо: {dish.get('name')}\n\nПожалуйста, напиши его рецепт.",
         reply_markup=MAIN_KEYBOARD,
     )
 
@@ -98,44 +99,13 @@ async def evaluate_answer_with_model(
         logger.error("OpenAI client is not initialized")
         return "Evaluation service is temporarily unavailable. Please try another dish later."
 
-    logger.info(
-        "Sending evaluation request to OpenAI for dish '%s'", dish_name
-    )
+    logger.info("Sending evaluation request to OpenAI for dish '%s'", dish_name)
     logger.debug(
         "User recipe preview: %s",
         (user_recipe[:120] + "...") if len(user_recipe) > 120 else user_recipe,
     )
 
-    prompt = """
-    Ти – експерт-шеф-кухар, який проводить тести для відбору кухарів у ресторан.
-
-    У своїй відповіді можеш звертатися безпосередньо до кандидата. Наприклад: "Ти написав...", "Тобі треба...".
-    
-    Найголовніша мета – допомогти користувачеві швидше вивчити меню. 
-    Якщо він забув якісь інгредієнти – вкажи йому на це і перерахуй їх, щоб він розумів свої слабкі сторони. 
-    Якщо вигадав інгредієнти, яких у страві немає – обов'язково варто про це сказати. 
-    Усі твої дії мають бути спрямовані на допомогу у якнайшвидшому вивченні меню ресторану.
-    
-    Правила:
-    1) Спілкуйся тільки українською, навіть якщо рецепт кандидата написаний російською.
-    2) Порівняй рецепт кандидата з офіційним і коротко оцінюй, наскільки вони збігаються.
-    3) Формат відповіді — стисло, у стилі Telegram: 5–6 коротких речень.
-    4) Виділяй головні розбіжності, пропуски або помилки.
-    5) Завжди додавай окремим рядком: 📍 Оцінка: X/10 (ціле число, де 10 = майже ідентичний).
-    6) Також я надам тобі інформацію про вартість страви (в українських гривнях) та її вагу (у грамах). Можеш використовувати цю інформацію у своїй генерації. Наприклад, вивести інформацію після оцінки у вигляді (кожен параметр з нового рядка): 💵Ціна: <price>грн. \n ⚖️Вага: <weight>г.
-    7) (ОПЦІОНАЛЬНО) Якщо можливо, дай одну дуже коротку, практичну пораду, як краще запам’ятати саме цей рецепт (без абстракцій). Відокрем її від основного тексту ньюлайнами та кількома тире (---)
-    
-    Вхідні дані:
-    - Назва страви: {dish_name}
-    - Офіційний рецепт: {official_recipe}
-    - Рецепт кандидата: {user_recipe}
-    - Вартість (у гривнях): {price}
-    - Вага (у грамах): {weight}
-
-    Завдання:
-    Проаналізуй та сформуй підсумок згідно з правилами.
-    """
-    prompt = prompt.format(
+    prompt = USER_PROMPT.format(
         dish_name=dish_name,
         official_recipe=official_recipe,
         user_recipe=user_recipe,
@@ -145,23 +115,18 @@ async def evaluate_answer_with_model(
 
     try:
         response = await openai_client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-mini",
             messages=[
                 {
                     "role": "system",
-                    "content": "Ви лаконічний, суворий оцінювач рецептів.",
+                    "content": SYSTEM_PROMPT,
                 },
                 {"role": "user", "content": prompt},
             ],
-            max_tokens=200,
-            temperature=0.3,
         )
     except Exception as exc:  # noqa: BLE001
         logger.exception("OpenAI evaluation failed: %s", exc)
-        return (
-            "Не вдалося отримати оцінку від моделі. "
-            "Спробуй, будь ласка, іншу страву трохи пізніше."
-        )
+        return "Не удалось получить оценку от модели.\nПопробуй, пожалуйста, другое блюдо чуть позже."
 
     content = (response.choices[0].message.content or "").strip()
     logger.debug("OpenAI evaluation response: %s", content)
@@ -172,6 +137,10 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
     """
     Handle user's recipe answer.
     """
+    await message.answer(
+        "Проверяю ответ...",
+        reply_markup=MAIN_KEYBOARD,
+    )
     user_id = message.from_user.id if message.from_user else "unknown"
     data = await state.get_data()
     dish_name = data.get("current_dish_name")
@@ -188,13 +157,13 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
         )
         # Fallback if we, for some reason, lost the dish in state
         await message.answer(
-            "I couldn't find the official recipe this time, but you can try another dish.",
+            "В этот раз я не смогл найти официальный рецепт, но вы можете попробовать другое блюдо.",
             reply_markup=MAIN_KEYBOARD,
         )
         await state.clear()
         return
 
-    official_recipe = dish.get("recipe") or "No recipe description available."
+    official_recipe = dish.get("recipe") or "Описание рецепта отсутствует."
     user_recipe = message.text or ""
 
     logger.info(
@@ -204,11 +173,11 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
     )
 
     evaluation = await evaluate_answer_with_model(
-        dish.get("name", "Unknown dish"),
+        dish.get("name", "Неизвестное блюдо"),
         official_recipe,
         user_recipe,
-        dish.get("price", "Unknown price"),
-        dish.get("weight", "Unknown weight"),
+        dish.get("price", "Неизвестная цена"),
+        dish.get("weight", "Неизвестный вес"),
     )
 
     image_url = dish.get("image_url")
@@ -221,9 +190,7 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
             user_id,
         )
         await message.answer_photo(
-            photo=image_url,
-            caption=evaluation,
-            reply_markup=MAIN_KEYBOARD,
+            photo=image_url, caption=evaluation, reply_markup=MAIN_KEYBOARD, parse_mode=ParseMode.MARKDOWN
         )
     else:
         logger.debug(
