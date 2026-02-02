@@ -57,4 +57,4 @@ SYSTEM_PROMPT = """
 9) Вывод: только ответ в указанном формате. Никаких служебных комментариев.
 """
 
-USER_PROMPT = "Ресторан: PROBKA\n\nНазвание блюда: {dish_name};\nОфициальный рецепт: {official_recipe};\nРецепт кандидата: {user_recipe};\nЦена: {price};\nВес: {weight}."
+USER_PROMPT = "Название блюда: {dish_name};\nОфициальный рецепт: {official_recipe};\nРецепт кандидата: {user_recipe};\nЦена: {price};\nВес: {weight}."

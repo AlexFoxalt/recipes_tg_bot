@@ -84,7 +84,7 @@ async def handle_try_next(message: types.Message, state: FSMContext) -> None:
     await state.set_state(QuizStates.waiting_for_answer)
 
     await message.answer(
-        f"Блюдо: {dish.get('name')}\n\nПожалуйста, напиши его рецепт.",
+        f"Ресторан: PROBKA\n\nБлюдо: {dish.get('name')}\n\nПожалуйста, напиши его рецепт.",
         reply_markup=MAIN_KEYBOARD,
     )
 
