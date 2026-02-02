@@ -3,7 +3,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://moondeer.choiceqr.com/section:menyu"  # your real menu URL
+url = "https://probka-rest.choiceqr.com/menu/section:kuhnya-90"  # your real menu URL
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")

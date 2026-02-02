@@ -1,933 +1,513 @@
 [
   {
-    "name": "Омлет с лососем Gravlax",
-    "recipe": "Легкий завтрак с маринованым лососем и свежей зеленью – идеальный завтрак с изысканным вкусом.",
-    "price": 330.0,
-    "weight": "240g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/YklNWqP-qzCjHrK-uWlDGRk.jpeg"
-  },
-  {
-    "name": "Утиная грудка",
-    "recipe": "Готовится под соусом жу де Канар, подается с запеченным яблоком с корицей, миндальными хлопьями и карамелизированной свеклой.",
-    "price": 550.0,
-    "weight": "400g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/LEnlRDr-LTEcXaT-tHFBbCq.jpeg"
-  },
-  {
-    "name": "Burger MOONDEER",
-    "recipe": "Фирменный бургер с двумя сочными говяжьими котлетами, в сочетании с плавленым сыром Чеддер, солеными огурцами, свежими помидорами и луковым конфитюром, дополнены фирменным соусом с трюфелем. Подается с картофелем фри и соусом BBQ.",
-    "price": 440.0,
-    "weight": "470g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ikulHlt-WmDHDuC-FCHOsbW.jpeg"
-  },
-  {
-    "name": "Щупальца Марокканского осьминога 100 г.",
-    "recipe": "Стоимость за 100 г сырого веса. Подается на подушке из пюре батата.",
-    "price": 880.0,
-    "weight": "100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/HDHhkLP-dlJepHG-IpCHwoy.jpeg"
-  },
-  {
-    "name": "Картофель MOONDEER",
-    "recipe": "Фирменный запеченный картофель, наполненный лососем гравлакс, кукурузой, яйцом и соленым огурцом.",
-    "price": 280.0,
-    "weight": "330g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/FGbUCAD-sgqAICy-TPdibgG.jpeg"
-  },
-  {
-    "name": "Ribeye Premium UA за 100 г.",
-    "recipe": "Стоимость за 100 г сырого веса. Сочный мраморный стейк Рибай, обжаренный до желаемой степени прокаливания.",
-    "price": 350.0,
-    "weight": "100g",
-    "image_url": null
-  },
-  {
-    "name": "Греческий салат",
-    "recipe": "Готовится из свежего салатного микса, болгарского перца, огурцов, томатов черри, красного лука с добавлением сыра ферра и оливок Каламата.",
-    "price": 250.0,
+    "name": "NEW Японский омлет",
+    "recipe": "Безлактозный паровой омлет, подается с тостом из свежих овощей, слабосоленым лососем и зеленью, заправлен греческим соусом на основе базилика и чеснока.\nОмлет заправлен азиатским соусом",
+    "price": 319.0,
     "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/FkgHGhS-jmlUsAg-VIrygoS.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/bVJOKRj-GOKNlpE-idgrYjg_prepare.jpeg"
   },
   {
-    "name": "Цыпленок el Siciliano",
-    "recipe": "Цыпленок обжаренный под кисло-сладким соусом Sweet Chili, подается на подушке из лаваша с грилированными томатами черри.",
-    "price": 460.0,
-    "weight": "500/50g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/wDJishm-hcJaekG-EiCjZgG.jpeg"
-  },
-  {
-    "name": "Гренландские креветки с соусом спайси",
-    "recipe": "Сочные северные креветки подаются с пикантным соусом на основе чили, спайси-майо и лайма. Идеальная закуска с ярким вкусом и лёгкой стрижкой.",
-    "price": 480.0,
-    "weight": "380g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/JpSvOAR-HskHDoi-wayOAeI.jpeg"
-  },
-  {
-    "name": "Ассорти сырное",
-    "recipe": "Ассорти из благородных сыров: камамбер, пармезан, дор блю, козий, подается с трюфельным медом, грецкими орехами и сезонными ягодами.",
-    "price": 680.0,
-    "weight": "430g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/GlMFjID-HoDaqQK-tJzdVth.jpeg"
-  },
-  {
-    "name": "Финский суп с лососем",
-    "recipe": "Суп на основе сливок и соуса песто, приготовленный из филе лосося, тигровых креветок, новозеландских мидий, бланшированного болгарского перца, сельдерея и моркови.",
-    "price": 650.0,
-    "weight": "550g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/UdGUxZf-fyBrSpu-dkgGKkT.jpeg"
-  },
-  {
-    "name": "Монегаск с вишней и мороженым",
-    "recipe": "Заварное тесто, выпеченное при высоких температурах с добавлением карамелизированной вишни и шариком мороженого пломбир.",
-    "price": 380.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/bgGuxRU-tVeuWqw-oergiXl.jpeg"
-  },
-  {
-    "name": "Пенне 4 сыра",
-    "recipe": "Идеальное сочетание сыров Дор Блю, Пармезана, Сулугуни и сливочного соуса.",
-    "price": 250.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/DiFvckT-qnDkCIR-HJYmiRG.jpeg"
-  },
-  {
-    "name": "Оливье с лососем и креветкой",
-    "recipe": "Нежное филе лосося, отварные овощи и пикантные соленые огурчики. Блюдо увенчано ломтиком лосося, россыпью красной икры и сочной креветкой.",
-    "price": 420.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/iNfGSqZ-GbBAezk-vevYKFt_prepare.jpeg"
-  },
-  {
-    "name": "Овсяная каша на альтернативном молоке",
-    "recipe": "Нежная овсяная каша на кокосовом/банановом/миндальном молоке, с добавлением сезонных фруктов и кокосовых чипсов.",
-    "price": 220.0,
-    "weight": "330g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/mjfNWUZ-BHlwnkh-RtYcIjP.jpeg"
-  },
-  {
-    "name": "Бефстроганов с картофелем",
-    "recipe": "Нежное тушеное филе телятины в сливочном соусе, подается с картофельным пюре, солеными огурцами и перцем чили.",
-    "price": 450.0,
-    "weight": "400g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/GncQjof-DaBlAzH-FobJFja.jpeg"
-  },
-  {
-    "name": "Chicken  burger",
-    "recipe": "Сочное куриное бедро в хрустящей золотистой панировке, в сочетании с сыром Чеддер, свежим салатом, томатами, соленым огурцом и луковым конфитюром, дополненное сырным соусом. Подается с картофелем фри и соусом BBQ.",
-    "price": 380.0,
-    "weight": "450g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/YlbSJpi-uLMFeDH-YmNUGUs.jpeg"
-  },
-  {
-    "name": "Дорадо гриль по средиземноморски 100 г.",
-    "recipe": "Стоимость за 100 г сырого веса. Подается с запеченными овощами (болгарский перец, перец чили, баклажан, сельдерей, кабачок, лук)",
-    "price": 180.0,
-    "weight": "100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ozalGsu-bfWIbID-ykCrlCO.jpeg"
-  },
-  {
-    "name": "Картофель в мундире с беконом и шампиньонами.",
-    "recipe": "Картофель запеченный с беконом и шампиньонами под сырной корочкой.",
-    "price": 220.0,
-    "weight": "300g",
-    "image_url": null
-  },
-  {
-    "name": "Т-bone за 100 г.",
-    "recipe": "Стоимость за 100 г сырого веса. Культовый стейк с Т-образной костью, сочетающий два вида мяса – мягкое филе миньона и насыщенный по вкусу стриплойн.",
-    "price": 350.0,
-    "weight": "100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/rsqRank-oLeYaFP-RykODHG_prepare.jpeg"
-  },
-  {
-    "name": "Свиные ребра в соусе BBQ",
-    "recipe": "Ребра из свинины глазированные в соусе BBQ подаются на подушке из лаваша с картофелем фри и кинзой.",
-    "price": 530.0,
-    "weight": "300/120g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ItkWKqf-KVbRGCP-FbSxbCM.jpeg"
-  },
-  {
-    "name": "Гренландские креветки по-тайски",
-    "recipe": "Креветки, обжаренные с чесноком, перцем чили, свежей кинзой, соевым соусом, лаймом и лемонграссом. Легкое и ароматное блюдо с ярким тайским характером – пикантное, свежее и сбалансированное.",
-    "price": 560.0,
-    "weight": "400g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/gAIHeSM-JQjbRwl-UhQBREF.jpeg"
-  },
-  {
-    "name": "Форшмак с тостами Мельба",
-    "recipe": "Хрустящие, тонко нарезанные ломтик поджаренного свежего хлеба подаются с вкусным форшмаком.",
-    "price": 350.0,
-    "weight": "220g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ONmlskz-GXMCDCm-taWXNQy.jpeg"
-  },
-  {
-    "name": "Суп Том Ям",
-    "recipe": "Ароматный тайский суп на кокосовом молоке, с морепродуктами, грибами, лемонграссом и перцем чили подается с шариком риса.",
-    "price": 480.0,
-    "weight": "490/60g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/WlkOJlU-IrCFYtl-gfjqMQx.jpeg"
-  },
-  {
-    "name": "Монегаск с манго и мороженым",
-    "recipe": "Заварное тесто, выпеченное при высоких температурах с добавлением карамелизованного манго и шариком мороженого пломбир.",
-    "price": 380.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/zQCdrcD-EycPsTo-edbLAkj.jpeg"
-  },
-  {
-    "name": "Пенне Болоньезе",
-    "recipe": "Классические пенне, щедро покрыты насыщенным соусом Болоньезе из говядины, томатов, моркови и сельдерея, с добавлением тертого сыра Пармезан.",
-    "price": 320.0,
-    "weight": "320g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/aFDlcwy-MuEmCWC-zECiglo.jpeg"
-  },
-  {
-    "name": "Лосось под шубой",
-    "recipe": "Классический салат в элегантной подаче. Нежное филе слабосоленого лосося под слоями отварной свеклы, картофеля и моркови. Пикантность к этому салату придают отборные каперсы.",
-    "price": 320.0,
-    "weight": "320g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/LJNVHHb-RcGAsvE-fbxeHVJ_prepare.jpeg"
-  },
-  {
-    "name": "Соленая овсянка",
-    "recipe": "Несладкая овсянка с обжаренными шампиньонами, шпинатом, пармезаном и яйцом пашот.",
-    "price": 220.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/CePGbbp-khmQGWb-sJFGutU.jpeg"
-  },
-  {
-    "name": "Соте из морепродуктов",
-    "recipe": "Горячее сотое морепродуктов (креветок, мидий, кальмаров) запеченное в сливочном соусе, подается с французской фасолью и помидорами черри.",
-    "price": 390.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/zDFRbLv-POWReAL-CKYGYHb.jpeg"
-  },
-  {
-    "name": "Pork burger",
-    "recipe": "Сочный бургер со свиной котлетой на гриле, покрытой сыром Чеддер, с салатом Коул Слоу (капуста, морковь, яблоки), ломтиками томата и поджаренным яйцом. Хрустящая булочка и пикантный соус придает насыщенности вкусу. Подается с картофелем фри и соусом BBQ.",
-    "price": 260.0,
-    "weight": "450g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/bdJxkTH-mtFkkZf-TUkcFIy.jpeg"
-  },
-  {
-    "name": "Картофель по-домашнему",
-    "recipe": "Румяной жареный картофель с золотистой корочкой, в сочетании с сочными шампиньонами, обжаренным луком и зеленью.",
-    "price": 120.0,
+    "name": "Оливье с лососем",
+    "recipe": "Нежный салат оливье на основе картофеля, моркови, яйца и зеленого горошка в сочетании со свежим огурцом и слабосоленым лососем. Заправляется мягким майонезом и украшается икрой тобико",
+    "price": 289.0,
     "weight": "250g",
-    "image_url": null
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/DcLSrqN-zqTrkRc-eACGnPU_prepare.jpeg"
   },
   {
-    "name": "Cowboy за 100 г.",
-    "recipe": "Стоимость за 100 г сырого веса. Сочный мраморный стейк ковбой, обжаренный до желаемой степени прокаливания.",
-    "price": 350.0,
+    "name": "NEW Витело-тоннато",
+    "recipe": "Подается с соусом на основе тунца, горчицы и каперсов. Украшен свежей рукколой, вяленым томатом и жареным каперсом",
+    "price": 349.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/CnlHqpj-heRVmuZ-DizJyQJ_prepare.jpeg"
+  },
+  {
+    "name": "Попкорн из креветок",
+    "recipe": "Попкорн из креветок \nНежное мясо креветок в хрустящей панировке с соусом айоли-лайм и спайси",
+    "price": 409.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/ugVkGwn-fzbzwBx-knlbtJg.jpeg"
+  },
+  {
+    "name": "Филе индейки с овощами в сливочном соусе",
+    "recipe": "Филе индейки под соусом терияки с бланшированными овощами в сливочном соусе. Подается с хрустящим луком фри.",
+    "price": 359.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/jQgJYEj-pYTevzy-WbeFbuz.jpeg"
+  },
+  {
+    "name": "Свиные ребра за 100 грамм",
+    "recipe": "Готовим на выбор :\n-Ребра BBQ\n-Ребра в медово-горчичной глазури\n\nСвиные ребра готовятся по технологии су-вид и обжариваются на открытом огне.",
+    "price": 239.0,
     "weight": "100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/PbwTiQA-avsEiXH-JbdbeeW_prepare.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/LySGgkE-RRmkKFC-WikGCJl.jpeg"
   },
   {
-    "name": "Гриль-салат с сыром халуми",
-    "recipe": "Жареные на гриле: перец, лук, томат, кабачок, шампиньоны, подаются с сыром халуми и свежей руколой.",
-    "price": 320.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/RMrhRTA-dxWlCXg-EDZnpLe.jpeg"
-  },
-  {
-    "name": "Шашлык из свиной шеи",
-    "recipe": "Сочный шашлык из свинины подается на подушке из лаваша, маринованным луком и соусом BBQ.",
-    "price": 320.0,
-    "weight": "220/100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/PEYbDHd-pTkEkWe-HRDRklY.jpeg"
-  },
-  {
-    "name": "Крылышки в медово-горчичном соусе",
-    "recipe": "Сочные куриные крылышки, обжаренные в медово-горчичном соусе, подаются на подушке из нарезанного лаваша.",
-    "price": 250.0,
-    "weight": "300/40/30g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/lqnATFd-mbETkvg-JtROIOz.jpeg"
-  },
-  {
-    "name": "Сельдь Шеф-посола с картофелем",
-    "recipe": "Свежая сельдь с обжаренным картофелем, подается с маринованным луком.",
-    "price": 280.0,
+    "name": "Паста Карбонара",
+    "recipe": "Нежная паста в сливочном соусе с беконом, желтком и сыром Пармезан",
+    "price": 289.0,
     "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/KyvuoHX-hkrMFDI-CGuePJc.jpeg"
-  },
-  {
-    "name": "Борщ красный с копченым ребром",
-    "recipe": "Традиционный украинский борщ с копченым ребром подается с салом перебитым с чесноком, пышками собственного производства и сметаной.",
-    "price": 320.0,
-    "weight": "400/90/85g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/bDEggJe-knPHYVi-KoQcbGX.jpeg"
-  },
-  {
-    "name": "Пирожное Киевское",
-    "recipe": "Легендарный Киевский торт в обновленном виде подается с оригинальным кремом и фундуком.",
-    "price": 250.0,
-    "weight": "180g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/FKHnhnj-lGVbeco-NbXwZCd.jpeg"
-  },
-  {
-    "name": "Ризотто с морепродуктами",
-    "recipe": "Нежный рис, приготовленный к идеальной кремовой текстуре, в сочетании с морским коктейлем – мидий, кальмаров и сочной креветкой дополнен свежей зеленью и каплей белого вина.",
-    "price": 390.0,
-    "weight": "380g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/lyHUMeq-OMVVqgz-FSGOeII.jpeg"
-  },
-  {
-    "name": "Мимоза",
-    "recipe": "Нежный, многослойный салат, где главная роль отведена сочному тунцу. Идеально дополнен слоями отварных овощей (картофеля и моркови).",
-    "price": 320.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/aznCotP-WzAZBHr-uDTkjjE_prepare.jpeg"
-  },
-  {
-    "name": "Каша кукурузная",
-    "recipe": "Кукурузная каша на ванильном молоке подается с теплой карамелизированной грушей.",
-    "price": 220.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/MvbZWBf-wUNrHHq-LDFNkeC.jpeg"
-  },
-  {
-    "name": "Картофель Блю-Чиз",
-    "recipe": "Запеченный картофель с творожным соусом и сыром Дор Блю.",
-    "price": 330.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/TeGRXCD-GOHmFBB-ZCLkUCE.jpeg"
-  },
-  {
-    "name": "Real burger 100% beef",
-    "recipe": "Говяжья котлета в сочетании с плавленым сыром Чеддер, солеными огурцами, свежими помидорами и луковым конфитюром, дополнены фирменным соусом с трюфелем. Подается с картофелем фри и соусом BBQ.",
-    "price": 340.0,
-    "weight": "360g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/OcdGnVJ-HvxhHzt-JBqDeOe.jpeg"
-  },
-  {
-    "name": "Лосось гриль с зелеными овощами",
-    "recipe": "Сочный стейк из лосося, обжаренный до золотистой корочки, подается на подушке из орехового соуса, гарниром из брокколи, стручковой фасоли и бобов эдамами.",
-    "price": 650.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/FhQjAkl-kileyts-VPrnCUJ.jpeg"
-  },
-  {
-    "name": "Овощи гриль",
-    "recipe": "Обжаренные на гриле сочные шампиньоны, томаты, болгарский перец, баклажаны, кабачок.",
-    "price": 175.0,
-    "weight": "200g",
-    "image_url": null
-  },
-  {
-    "name": "Fillet Mignon",
-    "recipe": "Стейк из филе говядины подается на подушке из фирменного соуса и со стручковой фасолью.",
-    "price": 880.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/tlvmNzS-PVXMHCn-HybjqkB.jpeg"
-  },
-  {
-    "name": "Салат с тунцем и осьминогом",
-    "recipe": "Яркий и незабываемо вкусный микс из авокадо, болгарского перца, томатов черри, оливок, листьев салата и главных средиземноморских ингредиентов свежего тунца и осьминога, заправленных по вкусу оливковым маслом.",
-    "price": 880.0,
-    "weight": "450g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/pfoZKVp-DbzZfZk-eyIVjZw.jpeg"
-  },
-  {
-    "name": "Шашлык из филе телятины",
-    "recipe": "Сочный шашлык из филе телятины подается на подушке из лаваша, маринованным луком и соусом BBQ.",
-    "price": 850.0,
-    "weight": "220/100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/HClYJak-bEzGLGl-UwbmkxS.jpeg"
-  },
-  {
-    "name": "Сыр бри в золотистом панко",
-    "recipe": "Идеальная закуска – сочетание обжаренного сыра Бри в золотистом панко с ягодным соусом!",
-    "price": 320.0,
-    "weight": "200g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/JSWCKOt-BzDBzKQ-dUGIpOL.jpeg"
-  },
-  {
-    "name": "Икра щуки",
-    "recipe": "Свежая икра подается с грилированными чиабатта-тостами и сливочным маслом.",
-    "price": 780.0,
-    "weight": "80/50/40g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/CcKoXFR-XQsTpqz-PNTrLxB.jpeg"
-  },
-  {
-    "name": "Мясная солянка со сметаной",
-    "recipe": "Солянка из 4 видов мяса, подается со сметаной и чиабатта-тост.",
-    "price": 295.0,
-    "weight": "260/90g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/nhXDuAn-qmStFVm-IvRktJs.jpeg"
-  },
-  {
-    "name": "Медовик с грушей",
-    "recipe": "Выпеченные медовые лепешки, покрытые сметаным кремом. Подается с карамелизированной грушей и сметаным соусом.",
-    "price": 250.0,
-    "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/mBMDCwR-YnBYALT-HfgFoZO.jpeg"
-  },
-  {
-    "name": "Соба с уткой",
-    "recipe": "Гречневая лапша соба с пекинской уткой, в сочетании с овощами вок (перец болгарский, морковь), бобами Едамаме, соевого соуса и ароматным соусом Sweet Chili и кинзой – легкая пикантность и яркая азиатская гармония вкусов.",
-    "price": 360.0,
-    "weight": "330g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/RuQWkTk-vUDbmHU-BIcXknB.jpeg"
-  },
-  {
-    "name": "Салат с уткой и хурмой",
-    "recipe": "Нежное филе утки в сочетании со сладкой сезонной хурмой и сочными сегментами грейпфрута. Подается на подушке из микса салата и заправлен пикантным апельсиново-имбирным соусом. Сверху посыпан хрустящей миндальной стружкой.",
-    "price": 390.0,
-    "weight": "280g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/NQrEPcE-pFoAgsS-FPwbFJC_prepare.jpeg"
-  },
-  {
-    "name": "Английский завтрак",
-    "recipe": "Сытный английский завтрак с охотничьими сосисками, яйцами, фасолью в томатном соусе, хрустящими дерунами, свежим салатом и булочкой «Бриош» — заряжающая на весь день классика.",
-    "price": 330.0,
-    "weight": "420g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/bNeJyXd-qoIHVCL-XirJqAx.jpeg"
-  },
-  {
-    "name": "Колбаски с капустой по-баварски",
-    "recipe": "Жареные сочные колбаски с тушеной капустой по особой рецептуре.",
-    "price": 480.0,
-    "weight": "550g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/sGQYhJX-FoOzguz-NISOlpU_prepare.jpeg"
-  },
-  {
-    "name": "Salmon fillet burger",
-    "recipe": "Нежное филе лосося обжаренное на гриле в сочетании с сыром Чеддер, хрустящим салатом, луковым конфитюром, свежими помидорами и маринованным огурцом, дополненное соусом тартар. Подается с картофелем фри и соусом BBQ.",
-    "price": 420.0,
-    "weight": "400g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/iCXhJLD-tjpbAfD-WJYOOOM.jpeg"
-  },
-  {
-    "name": "Бычки жареные",
-    "recipe": "Обжаренные в кукурузной муке, подаем с миксом салата и лимоном.",
-    "price": 420.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/GeCMOYk-FshDchX-wQSmwVx.jpeg"
-  },
-  {
-    "name": "Биточки из рапанов",
-    "recipe": "Биточки, обжаренные до золотистой корочки. Подаются с соусом тар-тар.",
-    "price": 650.0,
-    "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ToUISPr-GYFCqgA-FUPRRVb_prepare.webp"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/iJIgGJi-HQmTVHu-dVpIczU.jpeg"
   },
   {
     "name": "Картофель фри",
-    "recipe": "Обжаренный во фритюре до золотистой корочки картофель, подается с соусом BBQ.",
-    "price": 125.0,
+    "recipe": "Хрустящий жареный картофель фри",
+    "price": 179.0,
     "weight": "150g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/RZeRauQ-fEoInGI-TndRMqH.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/TYwsdEz-ZFYvndb-bhkDjUC.jpeg"
   },
   {
-    "name": "Медальоны из телятины",
-    "recipe": "Сочные медальоны, с добавлением 2 креветок, поданы на подушке из сливочного соуса, с гарниром из свежих овощей.",
-    "price": 850.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/akrXDJN-fldHUCJ-tEKzonC.jpeg"
-  },
-  {
-    "name": "Цезарь с куриным филе в беконе",
-    "recipe": "Это был бы обычный Цезарь, если бы не было исключения – куриное филе завернуто в бекон, это настолько вкусно и необычно, что Вы точно запомните такой Цезарь!",
-    "price": 320.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/OgGCCzJ-JCpIwpB-CzIclxh.jpeg"
-  },
-  {
-    "name": "Шашлык из куриного филе",
-    "recipe": "Сочный шашлык из куриного филе подается на подушке из лаваша, маринованным луком и соусом BBQ.",
-    "price": 330.0,
-    "weight": "220/100g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/GkculUs-ZbbKYGg-XUkOCul.jpeg"
-  },
-  {
-    "name": "Ролл лаваш с сыром сулугуни",
-    "recipe": "Хрустящий ролл лаваш с сыром Сулугуни и томатами – это идеальный вариант для вкусного и быстрого перекуса!",
-    "price": 220.0,
+    "name": "Осидзуси спайси краб",
+    "recipe": "Рис, лосось, крем-сыр, икра летучей рыбы, огурец, спайси снежный краб",
+    "price": 469.0,
     "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/dXTvgpc-VNwzkGW-kUGkxuD.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/YGJwRIb-DIJRaub-lFzxMRR.jpeg"
   },
   {
-    "name": "Брускет с лососем Gravlax",
-    "recipe": "Хрустящая чиабатта с сыром филадельфия, лососем гравлакс и вялеными томатами, подается с оливками Каламата.",
-    "price": 480.0,
-    "weight": "200g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/lBHjVjo-ewnICRd-JhbFYCb.jpeg"
+    "name": "NEW Сковорода с говядиной",
+    "recipe": "Говяжье ребро подается с обжаренным картофелем, ассорти грибов, стручковой фасолью и томатами черри.",
+    "price": 349.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/DssUZAI-STtOmIf-Mziezvs_prepare.jpeg"
   },
   {
-    "name": "Морская уха с саламуром",
-    "recipe": "Наваристая уха на основе филе лосося, приготовленная с картофелем, морковью, креветкой, зеленью, подаем с саламуром.",
-    "price": 270.0,
-    "weight": "320/40/50g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/IwTelbo-JlkGIbC-CDCMIrH.jpeg"
-  },
-  {
-    "name": "Тирамису",
-    "recipe": "Легендарный десерт приготовлен по итальянской рецептуре из воздушного крема на маскарпоне, пропитанных эспрессо бисквитов савоярди и легкой пудры какао. Нежный вкус, который нельзя забыть.",
-    "price": 220.0,
-    "weight": "180g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/YkQleEv-zIuCLGk-pJMmIle.jpeg"
-  },
-  {
-    "name": "Спагетти Карбонара",
-    "recipe": "Нежные спагетти в классическом соусе карбонара с яйцом, беконом и луком с добавлением тертого сыра Пармезан – классика итальянской кухни в каждом укусе.",
-    "price": 250.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/NQOKfAf-uaMJFHh-VXvTlkQ.jpeg"
-  },
-  {
-    "name": "Язык Телячий с соусом \"Крем-Хрин\"",
-    "recipe": "Нежный телячий язык, отваренный до идеальной мягкости и тонко нарезанный. Подаётся с миксом салата, кусочками печеного перца и авторским сливочным соусом, где пикантный хрен гармонично сочетается с легкой сладостью сливок.",
-    "price": 460.0,
-    "weight": "200g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/tGaFQJW-nsYXlFe-TBCywpf_prepare.jpeg"
-  },
-  {
-    "name": "Трюфельный скрембл с лососем",
-    "recipe": "Трюфельный скрембл подается с нежным сыром камамбер, маринованым лососем, салатом (авокадо, беби-шпинат, рукокола, вяленые томаты) и хрустящим гречишным хлебом.",
-    "price": 480.0,
+    "name": "Бургер с индейкой",
+    "recipe": "Булка бриошь, смазанная сливочным муссом, подается со свежей рукколой, томатами, карамелизированной грушей, соусом дор-блю и котлетой из индейки в хрустящей панировке. \nК бургеру подаем сырные картофельные дипы и кетчуп",
+    "price": 429.0,
     "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/FYUaeqc-lbsJQlD-ZRbklsR.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/PHMFCiJ-powgiJt-OLHGmem_prepare.jpeg"
   },
   {
-    "name": "Бифштекс с трюфельным пюре",
-    "recipe": "Нежнейший бифштекс подается на подушке из трюфельного пюре и отдельно подается соус из белых грибов.",
-    "price": 380.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/pKTyGII-GFTEmKL-FXwDimJ.jpeg"
-  },
-  {
-    "name": "Карп жареный с картофелем",
-    "recipe": "Карп обжаренный в кукурузной муке, подается с картофелем по-домашнему и помидорами черри.",
-    "price": 440.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/grvWKZF-qeInIFU-CHrWcgs.jpeg"
-  },
-  {
-    "name": "Барабулька",
-    "recipe": "Нежная барабулька, обжаренная до хрустящей корочки, подается со свежей зеленью и долькой лимона.",
-    "price": 450.0,
+    "name": "NEW Панкейки",
+    "recipe": "Воздушные панкейки на кефире\nподаются с сезонными ягодами, сгущенным молоком, медом и ягодным соусом\n",
+    "price": 299.0,
     "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/gmDVaQX-CYICbVu-OmQkWFd.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/PkugbHh-chdFBEc-mtIkOjB_prepare.jpeg"
   },
   {
-    "name": "Рис с овощами",
-    "recipe": "Рис с добавлением перца болгарского, моркови и стручковой фасоли.",
-    "price": 150.0,
-    "weight": "180g",
-    "image_url": null
-  },
-  {
-    "name": "Pepper beef fillet steak",
-    "recipe": "Стейк из филе говядины, обжаривается в смеси душистых перцев, подается с картофельными дольками и соусом BBQ.",
-    "price": 950.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/KKbNCMM-tXZSskW-OtPqjYI.jpeg"
-  },
-  {
-    "name": "Салат с говядиной по-тайски",
-    "recipe": "Сочная обжаренная говядина сочетается со свежими томатами, огурцами, красным луком и листьями салата, заправленными соевыми соусами и мир чили.",
-    "price": 420.0,
+    "name": "Салат с ростбифом",
+    "recipe": "Салат с ростбифом. Свежие листья салата, замешанные в имбирном соусе. Соус готовится на майонезной основе с соевым соусом, чесноком, пармезаном и имбирем. Добавляется мясо из нежной телячьей вырезки, томаты черри, шампиньоны гриль и маринованные корнишоны. Салат посыпается сыром пармезан и луком фри.",
+    "price": 409.0,
     "weight": "280g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/hkAfIYX-JLmbcoD-DsLWCNC_prepare.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/zfkoCxG-OJdkpRZ-tFbbNtX.jpeg"
   },
   {
-    "name": "Тигровые креветки Sweet chilli",
-    "recipe": "Идеально сбалансированный кисло-сладкий соус Sweet chilli с легкой остротой идеально подчеркнет Королевские тигровые креветки!",
-    "price": 580.0,
-    "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/CPHDrFJ-obPiiDb-kWkIGGN.jpeg"
-  },
-  {
-    "name": "Севиче из креветок",
-    "recipe": "Сочные креветки, маринованные в соке лайма с чили, красным луком и кинзой, в сочетании со сладким спелым манго. Легкая освежающая закуска с ярким тропическим вкусом.",
-    "price": 650.0,
-    "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/oEAuGHQ-HekcgfI-mTegULb.jpeg"
-  },
-  {
-    "name": "Бульон куриный",
-    "recipe": "Подается с сочным куриным бедром, сухариками и лапшой собственного производства.",
-    "price": 180.0,
-    "weight": "300/50g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/fJxluIS-llAfliC-kWjmzPS.jpeg"
-  },
-  {
-    "name": "Наполеон",
-    "recipe": "Многослойный десерт с нежным тестом и кремом, выдержанный для идеальной текстуры и насыщенного вкуса. Подается охлажденным.",
-    "price": 220.0,
+    "name": "Тартар из говядины",
+    "recipe": "Тартар из говядины в сочетании с трюфелем, каперсами, луком-шалот и сливочным крем-сыром. Подается с хрустящей чиабаттой",
+    "price": 299.0,
     "weight": "180g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/HHeFlkM-xXeBisH-eZBRVEs.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/zUCxFiG-CKBJnlD-iTEzmVn.jpeg"
   },
   {
-    "name": "Спагетти неро с морепродуктами",
-    "recipe": "Необычные черные спагетти, приготовленные с морским миксом – нежными кальмарами, мидиями и сочной креветкой, в соусе на основе белого вина с добавлением тертого сыра Пармезан.",
-    "price": 350.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/BQgZLiA-yHuCDhq-dkEilpT.jpeg"
-  },
-  {
-    "name": "Утиная ножка \"Конфи\"",
-    "recipe": "Утиная ножка подается с карамелизированной грушей, ароматизированной теплыми нотами бадьяна и корицы. Завершающий штрих – наш фирменный насыщенный соус, изготовленный на основе лесных ягод и ароматных трав.",
-    "price": 480.0,
-    "weight": "400g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/PcJOFcj-UeYXClc-fCEbbnC_prepare.jpeg"
-  },
-  {
-    "name": "Бриошь с лососем Gravlax",
-    "recipe": "Обжаренная до золотистой корочки булочка бриош с нежным сыром филадельфия, гравийный лосось и яйцом пашот. Подается с миксом зелени, посыпан тертым кешью.",
-    "price": 350.0,
-    "weight": "230g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/utuAHfb-bDbWhHf-BMzmWnW.jpeg"
-  },
-  {
-    "name": "Шницель с салатом Вальдорф",
-    "recipe": "Нежный шницель из свинины в панировке подается с салатом Вальдорф. Cалат \"Вальдорф\" - классический американский салат из яблок, сельдерея и грецких орехов.",
-    "price": 390.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/jhVTJCw-GyEyjCl-NNAuzMk.jpeg"
-  },
-  {
-    "name": "Брокколи с творожным соусом",
-    "recipe": "Брокколи с творожным соусом",
-    "price": 220.0,
+    "name": "Наггетсы куриные",
+    "recipe": "Куриные наггетсы в панировочных сухарях, подаются с соусом тартар",
+    "price": 269.0,
     "weight": "200g",
-    "image_url": null
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/FMFbljc-dMlzKUv-IPJzpOW.jpeg"
   },
   {
-    "name": "Стейк из свинины",
-    "recipe": "Сочный стейк из свинины, подается с картофелем запеченным с пармезаном и салатом из руккола, кинзы и вяленых томатов.",
-    "price": 420.0,
-    "weight": "320/220/50g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/yoeGezO-NiWlbHW-UelVyEG.jpeg"
+    "name": "Куриный бульон",
+    "recipe": "Насыщенный куриный бульон с домашней лапшой и курицей.",
+    "price": 269.0,
+    "weight": "300ml",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/keFUnGz-peFnYsA-kadRlfb.jpeg"
   },
   {
-    "name": "Салат с телятиной",
-    "recipe": "Сочная обжаренная телятина с шампиньонами и луком, заправляется свежими томатами, листьями салата и соусом Демигляс.",
-    "price": 480.0,
+    "name": "Ассорти ребер на компанию за 100 грамм",
+    "recipe": "-Ребра Копченая глазурь 250-300 грамм\n-Ребра BBQ 250-300 грамм\n-Ребра BBQ с пряностями 250-300 грамм\n-Ребра в медово-горчичной глазури 250-300 грамм",
+    "price": 239.0,
+    "weight": "100g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/ekbMkiy-ALgXYpV-jkzJuYi.jpeg"
+  },
+  {
+    "name": "Паста Фузилли с курицей",
+    "recipe": "Тушеное куриное филе в сливках, подается с сыром пармезан",
+    "price": 319.0,
     "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/RoUHvFe-fGVvhyi-MXvjDMz.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/keWcGTX-OOsrlbH-FtqEuOj.jpeg"
   },
   {
-    "name": "Черноморские мидии с сыром Дор Блю",
-    "recipe": "Приготовленные по рецепту Moondeer, черноморские мидии со сливочным соусом и сыром Дор Блю обладают незабываемым вкусом!",
-    "price": 480.0,
-    "weight": "650g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/KoJtZfH-oKEFriI-MqlWohI.jpeg"
-  },
-  {
-    "name": "Карпачо из филе телятины",
-    "recipe": "Тонко нарезанное филе говядины подается со свежей руколой, плодами каперсов и вялеными томатами.",
-    "price": 480.0,
-    "weight": "150g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ljIcCLc-ephWueo-JiDbbIx.jpeg"
-  },
-  {
-    "name": "Грибной крем-суп",
-    "recipe": "Нежный крем-суп из перетертых шампиньонов на сливочной основе, с добавлением трюфельного масла.",
-    "price": 220.0,
-    "weight": "260g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/QCwGKnW-rtXYbiO-EkcWjdY.jpeg"
-  },
-  {
-    "name": "Шоколадный фондан",
-    "recipe": "Фондан из черного шоколада, подается с ягодным соусом и шаром мороженого пломбир.",
-    "price": 250.0,
-    "weight": "140g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/UFYObbv-NdlzOZI-vAewQzM.jpeg"
-  },
-  {
-    "name": "Фетучини с куриным филе",
-    "recipe": "Нежные фетучини в сливочном соусе с сочным куриным бедром, обжаренными шампиньонами, луком с добавлением тертого сыра Пармезан.",
-    "price": 250.0,
-    "weight": "350g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/hOQxCGk-zMEytDp-FILwvyc.jpeg"
-  },
-  {
-    "name": "Хурма запеченная",
-    "recipe": "Нежный, сезонный десерт: запеченная ароматная хурма в сочетании с изысканной соленой карамелью. Подается с шариком мороженого и миксом обжаренных орехов – кешью и фундуком.",
-    "price": 250.0,
+    "name": "Ролл Филадельфия",
+    "recipe": "Рис, крем-сыр, огурец, авокадо, лосось, икра летучей рыбы",
+    "price": 469.0,
     "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/JrgFMQN-dnIVxJb-LdKSxfQ_prepare.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/mUJFKwb-OxWFewf-HJlkXcB.jpeg"
   },
   {
-    "name": "Хашбраун",
-    "recipe": "Большой хрустящий дерун, подается с грибным соусом, хрустящим беконом, томатами черри и глазушкой.",
-    "price": 320.0,
-    "weight": "540g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/UcrgllA-rVQlQlY-KawlGaQ.jpeg"
+    "name": "NEW Сковорода с курицей и картофелем",
+    "recipe": "Обжаренное куриное бедро подается с жареным картофелем, шампиньонами, болгарским перцем, стручковой фасолью и сырным соусом",
+    "price": 369.0,
+    "weight": "300g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/tTfXQIS-jPHEcst-okKZImf.jpeg"
+  },
+  {
+    "name": "Бургер с говядиной",
+    "recipe": "Булка бриошь с карамелизированным луком и двумя видами сыра (бри и дор-блю), свежая руккола и говяжья котлета. Подается с дипами и кетчупом",
+    "price": 439.0,
+    "weight": "350g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/nvFwaCd-rlEWJFF-azQxBHm_prepare.jpeg"
+  },
+  {
+    "name": "NEW Шакшука",
+    "recipe": "Классическая томатная шакшука с овочами (лук, томаты, болгарский перец и зелень)\nподается с сыром фета и хрустящим хлебом (бездрожжевым)\n",
+    "price": 289.0,
+    "weight": "300g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/yzkDkIR-DmQenJD-wsEgGox_prepare.jpeg"
+  },
+  {
+    "name": "Салат с авокадо и томатами",
+    "recipe": "Легкий салат из двух видов томатов, хрустящим миксом салата, рукколой и нежным авокадо. Заправляется трюфельным соусом, в основе которого сицилийский апельсин, и посыпается тыквенными семечками.\nАллерген: цитрус, мед, трюфель.",
+    "price": 319.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/feCWGHG-YAbUXwh-NFrDLfp.jpeg"
+  },
+  {
+    "name": "New тартар Лосось",
+    "recipe": "Рубленый лосось подается на соусе понзу и авокадо. Заправляется каперсами, лимонным соком и оливковым маслом.",
+    "price": 419.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/enJXXUK-TtQQDGl-HksuvDt.jpeg"
+  },
+  {
+    "name": "Сыр бри в панировке с вишневым соусом",
+    "recipe": "Сливочный сыр в хрустящей панировке, подается с ягодным соусом",
+    "price": 349.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/pYxlSIO-qmVuJel-GoAwxDB.jpeg"
+  },
+  {
+    "name": "Борщ",
+    "recipe": "Классический украинский красный борщ, на основе бульона из говядины.\nПодается с пампушкой, салом с мясной прослойкой, крепкой горчицей, сметаной, чесноком и зеленью",
+    "price": 329.0,
+    "weight": "300ml",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/kJFZfpq-bJEeufc-WGiHzFX.jpeg"
+  },
+  {
+    "name": "New лосось с цукини",
+    "recipe": "Филе лосося подается на подушке из цукини и шпината под морским сливочным соусом.",
+    "price": 469.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/bLQlRCy-KbizEDe-xZqDVKZ.jpeg"
+  },
+  {
+    "name": "Стейк Рибай за 100 грамм",
+    "recipe": "Сочный стейк из говядины, маринованный в пряностях, готовится на открытом огне. Подается с пряным сливочным маслом (чеснок, перец чили, зелень, пряности и травы)\nЦена за 100 грамм",
+    "price": 319.0,
+    "weight": "100g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/WlovLqI-NOATRQS-GxJfOGh.jpeg"
+  },
+  {
+    "name": "Паста с креветками",
+    "recipe": "Феттуччине готовится на сливочном соусе с добавлением креветок, сыра пармезан и трюфельного пате.",
+    "price": 349.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/kvLWxzD-HbAbkel-mYrQWYp.jpeg"
   },
   {
     "name": "Картофельное пюре",
-    "recipe": "Картофельное пюре",
-    "price": 155.0,
+    "recipe": "Нежное картофельное пюре с добавлением сливочного масла.",
+    "price": 179.0,
     "weight": "200g",
-    "image_url": null
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/NBJHpZn-CXEHKhP-dDxKyuY.jpeg"
+  },
+  {
+    "name": "Ролл с креветкой и авокадо",
+    "recipe": "Рис, огурец, авокадо, айоли лайм, креветка, кранч темпура, соус унаги",
+    "price": 429.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/uNZJlDw-ljbleBH-iGIatSH.jpeg"
+  },
+  {
+    "name": "Хрустящий чалагач",
+    "recipe": "Тонко отбитая часть балыка в двойной панировке, обжаренная в пряных травах \nПодается с салатом из свежего шпината, огурцов и рукколы, заправленного греческим соусом. К мясу подаем азиатский соус на основе сладкого чили",
+    "price": 429.0,
+    "weight": "350g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/QGQtccY-NRaMuvJ-cXJkMdi_prepare.jpeg"
+  },
+  {
+    "name": "NEW Крок-мадам",
+    "recipe": "Хрустящий хлеб бриошь с соусом на основе тунца и телятиной (медиум) и сыром бри\nподается с яйцом всмятку, Голландским соусом, свежей рукколой, маринованными огурцами (собственного приготовления) и свежим луком",
+    "price": 339.0,
+    "weight": "350g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/FClINYG-gJANpNF-aFjRJVt_prepare.jpeg"
+  },
+  {
+    "name": "Салат с индейкой",
+    "recipe": "Хрустящий микс салата с добавлением свежих томатов, сезонных ягод и индейки, заправляется трюфельным соусом, в основе которого сицилийский апельсин.\nАллерген: мед, фисташка, трюфельная паста, цитрус.",
+    "price": 329.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/uHCkXwJ-LkGwDwQ-AbHIHlg.jpeg"
+  },
+  {
+    "name": "Паштет из печени цыпленка",
+    "recipe": "Подается с крафтовым хлебом, сливочным маслом и ягодным соусом",
+    "price": 289.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/ZHGtPJG-heYwlBZ-mPJoyis.jpeg"
+  },
+  {
+    "name": "Лаваш с сулугуни",
+    "recipe": "Хрустящий лаваш с сыром сулугуни, томатами, зеленью и соусом цезарь.",
+    "price": 239.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/VnrTdet-CWdROmn-XXjbATy.jpeg"
+  },
+  {
+    "name": "Том Ям",
+    "recipe": "Классический азиатский суп на основе куриного бульона, пасты Том Ям, листьев лайма, стебля лемонграсса, соуса из копченых томатов, кокосового молока и риса",
+    "price": 429.0,
+    "weight": "300ml",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/HeGjHWu-labrhwU-imSQGdA.jpeg"
+  },
+  {
+    "name": "Филе Миньон",
+    "recipe": "Нежная говяжья вырезка подается с овощами гриль и соусом демигляс",
+    "price": 579.0,
+    "weight": "300g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/fTrrRaV-DxtMrFE-yBCvFSz.jpeg"
+  },
+  {
+    "name": "Каре ягненка за 100 грамм",
+    "recipe": "Каре молодого ягненка, маринованное в соли и перце, подается с кукурузой гриль.",
+    "price": 309.0,
+    "weight": "100g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/fqECUtr-kHDAGXh-BCDGGvb.jpeg"
+  },
+  {
+    "name": "Паста с морепродуктами",
+    "recipe": "Нежная паста с креветками, кальмаром и мидиями в сливочном соусе с добавлением свежего шпината",
+    "price": 369.0,
+    "weight": "350g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/DlgUYUI-KJJDRgD-IbrofNI_prepare.jpeg"
+  },
+  {
+    "name": "Паровой рис",
+    "recipe": "Азиатский паровой рис на основе кокосового молока.",
+    "price": 149.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/flUtqvr-Itmznei-oeJXWJv.jpeg"
+  },
+  {
+    "name": "Ролл с угрем",
+    "recipe": "Рис, огурец, авокадо, лосось, крем-сыр, кранч темпура, угорь, соус унаги, фурикаке",
+    "price": 489.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/ncUdNVp-KIFdVyJ-eXZGgCZ.jpeg"
+  },
+  {
+    "name": "Медовик",
+    "recipe": "Классический десерт со сметанно-сливочным кремом.",
+    "price": 229.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/rUVNGlD-LTYAGFT-jcrHJvg.jpeg"
+  },
+  {
+    "name": "Томагавк",
+    "recipe": "Томагавк (рибай на реберной кости) Подается с ароматным маслом, запеченным чесноком и перцем чили",
+    "price": 299.0,
+    "weight": "100g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/fwPDClr-BcJYzdI-DZwDeHD_prepare.webp"
+  },
+  {
+    "name": "Филе сибаса су-вид со шпинатом и цветной капустой",
+    "recipe": "Филе сибаса су-вид подаем со стейком из цветной капусты, вымоченной в соевом соусе, и нежным кремом из цветной капусты с добавлением сливок",
+    "price": 529.0,
+    "weight": "300g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/lrTbAhD-WIJjRHM-TlWKcVh_prepare.jpeg"
+  },
+  {
+    "name": "NEW Тост с лососем",
+    "recipe": "Хрустящий хлеб бриошь с соусом Гуакамоле\nподается со слабосоленым лососем, яйцом всмятку, свежей рукколой и Голландским соусом. Посыпан миксом семян",
+    "price": 399.0,
+    "weight": "300g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/eSkQGRw-xSJzPSH-uIKDFmQ_prepare.jpeg"
   },
   {
     "name": "Салат с морепродуктами",
-    "recipe": "Готовится из свежих морепродуктов: мяса чилийских мидий, кальмаров и тигровых креветок под соусом цитрон с добавлением филе апельсина и грейпфрута.",
-    "price": 420.0,
+    "recipe": "Мидии, кальмар, лосось, креветки, томат черри, яйцо перепелиное.\nСалат поливается соусом на основе сливок и сыра дор-блю.",
+    "price": 449.0,
+    "weight": "280g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/VPaJCnV-evMbDxF-FcrGkYk.jpeg"
+  },
+  {
+    "name": "Говяжьи щечки",
+    "recipe": "Нежные щечки, томленые с овощами в сочетании с трюфельным пюре",
+    "price": 369.0,
     "weight": "330g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/RDJvxZh-MsMoFhA-vHgEDmf.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/InHvakk-JrwllXF-KKCBIDr.jpeg"
   },
   {
-    "name": "Черноморские мидии с томатами",
-    "recipe": "Рецепт от шефа, где главная особенность особого вкуса Черноморских мидий – это микс вина, томатов и зелени.",
-    "price": 420.0,
-    "weight": "600g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/IfDaffq-gvXzoGS-XTxKgIQ.jpeg"
-  },
-  {
-    "name": "Тар Тар из тунца",
-    "recipe": "Филе свежего тунца, нарезанное вручную, подается с авокадо, каперсами, вялеными помидорами и перепелиным яйцом. Идеальное сочетание нежности, свежести и азиатских акцентов.",
-    "price": 520.0,
+    "name": "Шашлык из свиной шеи",
+    "recipe": "Шашлык из свиной шеи с добавлением лука, обжаренный на открытом огне.",
+    "price": 439.0,
     "weight": "200g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/dggTevX-oHFxlYA-gYuwaDt.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/lHwoiGQ-JneQhSy-zVbGeIF.jpeg"
   },
   {
-    "name": "Чернослив с грецким орехом",
-    "recipe": "Сладкий чернослив, доведенный до идеальной мягкости, с хрустящей начинкой из грецкого ореха, покрывается сливочным кремом и стружкой из черного шоколада.",
-    "price": 380.0,
+    "name": "Овощи гриль",
+    "recipe": "Томаты черри, баклажан, грибы шампиньоны, перец болгарский, кукуруза и кабачок.",
+    "price": 269.0,
+    "weight": "200g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/jgkncSH-eSCtXVh-lDLJaHK.jpeg"
+  },
+  {
+    "name": "Темпура ролл",
+    "recipe": "Рис, угорь, огурец, креветка, крем-сыр, икра летучей рыбы, чука, спайси снежный краб, кунжутный соус",
+    "price": 459.0,
     "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/kXbYIog-pFbtsgS-IkIuemH_prepare.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/eOMEYHv-uqROjAG-kHJEKiu.jpeg"
   },
   {
-    "name": "Тартин из филе говядины",
-    "recipe": "Хрустящий тартин с нежной телятиной, кремом из авокадо и яйцом пашот. Сытный, свежий и насыщенный вкус.",
-    "price": 350.0,
-    "weight": "330g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/QJFlJwI-VxGykXV-GDdjYij.jpeg"
+    "name": "Наполеон",
+    "recipe": "Авторский наполеон с заварным кремом",
+    "price": 229.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/bwWlQVt-Gkacteb-QbpzWbK.jpeg"
   },
   {
-    "name": "Спаржевая фасоль",
-    "recipe": "Спаржевая фасоль",
-    "price": 145.0,
+    "name": "Лимонный чизкейк",
+    "recipe": "Ванильно-лимонный чизкейк, который подается с фисташкой и миндалем.",
+    "price": 249.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/lUtVHCG-lhHCgIq-QUuTGmF_prepare.jpeg"
+  },
+  {
+    "name": "Тост с ростбифом и сырным соусом",
+    "recipe": "Хрустящий гречневый тост, подается с двумя видами соусов - сырным и подкопченным BBQ, нежным ростбифом, свежей рукколой и яйцом",
+    "price": 379.0,
+    "weight": "350g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/orXLvNF-wZjihDm-cyJreTr.jpeg"
+  },
+  {
+    "name": "Цезарь с курицей",
+    "recipe": "Жареное куриное филе, томаты, кусочки круассана, бекон, перепелиное яйцо и сыр Пармезан",
+    "price": 359.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/zfDXbHG-hogyqHp-BbrClFB.jpeg"
+  },
+  {
+    "name": "New закуска с тюлькой",
+    "recipe": "Черноморская тюлька, заправленная домашним маслом, подается с картофелем в зелени и маринованным синим луком.",
+    "price": 269.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/eWslSVy-tAAubbH-HjexIMS_prepare.jpeg"
+  },
+  {
+    "name": "Рыбные котлеты с пюре",
+    "recipe": "Котлеты из двух видов рыбы со сливочным картофельным пюре и сырным соусом",
+    "price": 519.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/GbHbDCs-qFlJXPf-rCQFJSk.jpeg"
+  },
+  {
+    "name": "Шашлык из курицы",
+    "recipe": "Шашлык из куриного бедра, маринованный с луком и пряностями, обжаривается на открытом огне.",
+    "price": 409.0,
     "weight": "200g",
-    "image_url": null
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/jyDbklI-wReGaPm-jximjem.jpeg"
   },
   {
-    "name": "Салат с тигровыми креветками",
-    "recipe": "Тигровые креветки подаются со свежим авокадо и киноа, листьями салата и заправляются оливковым маслом.",
-    "price": 330.0,
+    "name": "Мороженое",
+    "recipe": "",
+    "price": 169.0,
+    "weight": "100g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/FkRnmBX-ISjklxT-rbHugbG.jpeg"
+  },
+  {
+    "name": "Глазунья с колбасками и беконом",
+    "recipe": "Яичница из двух яиц, подается с картофельными дипами, маринованными огурцами собственного приготовления, кусочками бекона, охотничьими колбасками и хлебом бриошь.",
+    "price": 319.0,
     "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/lCdDDDR-mjxkKAb-lmbhZnL.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/gGRvjlp-FVlvMQr-uqKosmR_prepare.jpeg"
   },
   {
-    "name": "Мидии н/з с творожным соусом",
-    "recipe": "6 новозеландських мідій запікаються під сиром Пармезан та Дор Блю.",
-    "price": 545.0,
+    "name": "Греческий",
+    "recipe": "Болгарский перец, помидор, огурец, оливки, маслины, синий лук, заправленные соусом на основе базилика и соевого соуса, замешивается с миксом салатов.",
+    "price": 319.0,
     "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/FJyRwdl-vkTXlrE-KqkbIlG.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/zUCdrHi-dGxFWGu-IXVjljb.jpeg"
   },
   {
-    "name": "Печеный перец с домашним сыром",
-    "recipe": "В этих рулетиках гармонично сочетаются сладковатый вкус печеного перца и солоноватый оттенок творога.",
-    "price": 320.0,
+    "name": "Карпаччо из говядины",
+    "recipe": "Филе говядины, маринованное в пряных травах с горчичным соусом, рукколой и пармезаном",
+    "price": 339.0,
     "weight": "230g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/JUFudrB-auJJqsu-IvPGzno.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/iROHBkz-oTXDsGD-AtZIkuG.jpeg"
   },
   {
-    "name": "Northern Hunter 🦌",
-    "recipe": "Яркий и необычный коктейль: согревающий ликер Эгермейстер соединяется с энергией свежих цитрусов — апельсинового и лимонного фрешей. Уникальный вкус придает сироп из сосновых шишек, что создает глубокий хвойный аромат и послевкусие.",
-    "price": 220.0,
-    "weight": "120ml",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ezYNDfu-afkCGnb-YKfZrmH_prepare.jpeg"
-  },
-  {
-    "name": "Тартин с прошуто",
-    "recipe": "Хрустящий тартин с кремом из авокадо, тонкими ломтиками прошутто и яйцом пашот. Усыпан миндальными хлопьями.",
-    "price": 350.0,
-    "weight": "330g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/LKmLaaN-NwHobOX-JCikHLo.jpeg"
-  },
-  {
-    "name": "Цезарь а La Mer",
-    "recipe": "Салат цезарь с обжаренным филе лосося и тигровыми креватками, хрустящим салатом, сочными томатами черри, пармезаном и фирменным соусом.",
-    "price": 520.0,
+    "name": "Бифштекс",
+    "recipe": "Рубленая телятина с пряными специями, зеленью и сыром Чеддер. Подается с зеленью, заправленной чесночным соусом, и запеченным болгарским перцем.",
+    "price": 439.0,
     "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/vvwhWpa-GbvecAm-BKrGIPs.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/xFWWbpI-zYDoFRC-AgRGdES.jpeg"
   },
   {
-    "name": "Кольца кальмаров в сухарях панко",
-    "recipe": "Свежие кальмары, запанированные в сухарях панко и обжаренные до хрустящей текстуры, создают непревзойденное удовольствие для поклонников морепродуктов.",
-    "price": 350.0,
-    "weight": "200/50g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/OtXovjy-RzglBFq-hcbVJjT.jpeg"
+    "name": "Свиная рулька за 100 грамм",
+    "recipe": "Хрустящая свиная рулька, выдержанная в пиве, подается с тушеной капустой",
+    "price": 189.0,
+    "weight": "100g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/aJlSocF-CqxmsyX-VpeIGbg.jpeg"
   },
   {
-    "name": "Крудо с дорадо",
-    "recipe": "Тонко нарезанное филе дорадо подается под соевым соусом, соусом Шисо и перцем чили.",
-    "price": 750.0,
+    "name": "Шоколадный фондан",
+    "recipe": "Классический французский десерт, подается с мороженым и ореховым кранчем",
+    "price": 259.0,
+    "weight": "150g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/Huehwig-CewIjmJ-ILGGAsm_prepare.jpeg"
+  },
+  {
+    "name": "Сырники",
+    "recipe": "Запеченные сырники из фермерского творога, подаются со сметаной, сгущенным молоком и ягодами по сезону, сверху посыпаются фисташкой",
+    "price": 269.0,
     "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/ICPQXnK-XinKFXh-GJHRVOH.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/VCXZbTO-ciZJZGX-ZXnABGW.jpeg"
   },
   {
-    "name": "Ромовый десерт",
-    "recipe": "Десертный коктейль на основе золотого рома. Смесь бананового и кокосового молока обеспечивает бархатную текстуру, а сиропы Крем-брюле и Черешня создают необычный, многогранный букет.",
-    "price": 320.0,
-    "weight": "200ml",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/jhAJHsJ-brGEjuT-LqnguVk_prepare.jpeg"
+    "name": "Капрезе",
+    "recipe": "Капрезе - легкая закуска из помидоров, моцареллы, оливкового масла и базилика.",
+    "price": 329.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/JGHCynB-DdFUIAa-eSGybDR.jpeg"
   },
   {
-    "name": "Завтрак Бенедикт",
-    "recipe": "Хрустящий гречишный хлеб с яйцами пашот, сочным беконом, беби шпинатом, подается под нежным голландским соусом.",
-    "price": 350.0,
-    "weight": "380g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/HhUlZHH-GAFEzBi-lHljbPe.jpeg"
+    "name": "Оссобуко",
+    "recipe": "Томленая в красном вине говядина, подается со сливочным картофельным пюре с добавлением трюфельной пасты",
+    "price": 479.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/xtHTAON-bXFIfNk-PkPYcjg.jpeg"
   },
   {
-    "name": "Теплый салат из баклажанов",
-    "recipe": "Баклажаны обжаренные во фритюре до золотистой корочки, подаются под соусом свет-чили с кинзой кешью и перцем чили.",
-    "price": 380.0,
-    "weight": "310g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/lHsItkP-CYbhWey-gOBWuVk.jpeg"
+    "name": "Креп Сюзетт",
+    "recipe": "Классические французские блины, обжаренные на сливочном масле, тушеные в карамельно-цитрусовом соусе на основе апельсинового фреша с добавлением цедры и мякоти апельсина. Подается со сливочным муссом.",
+    "price": 299.0,
+    "weight": "250g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/XStgxor-llhzJvI-ikFoddP.jpeg"
   },
   {
-    "name": "Рапаны в соусе с шафраном",
-    "recipe": "Изюминку этому блюду придает рапан и особый рецепт приготовления в сливочно-творожном соусе с добавлением шафрана.",
-    "price": 620.0,
-    "weight": "340g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/GYoKfFM-xkiJoUd-yuOCOFe.jpeg"
+    "name": "Разносолы",
+    "recipe": "Ассорти разносолов (капуста квашеная, огурец м/с, маринованные томаты и слива, моченые яблоки и чеснок).",
+    "price": 299.0,
+    "weight": "350g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/zynzxbl-mMpyeMR-eQgfKVf.jpeg"
   },
   {
-    "name": "Гуакамоле из авокадо",
-    "recipe": "Подается с рисовыми чипсами.",
-    "price": 350.0,
+    "name": "Икра щуки",
+    "recipe": "Щучья икра с добавлением лука-шалот, подается со сливочным маслом и бородинским хлебом.",
+    "price": 519.0,
+    "weight": "50g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/pFPDSzE-evopnLP-oXbIdeJ.jpeg"
+  },
+  {
+    "name": "Запеченный картофель с красной икрой",
+    "recipe": "Запеченный картофель с пряностями, подается с сыром пармезан, красной икрой и соусом дзадзики",
+    "price": 369.0,
     "weight": "200g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/kXWUWLk-UHeAiQY-ehqNycR.jpeg"
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/GBGVhak-SqnpepJ-iSNdgMc.jpeg"
   },
   {
-    "name": "Икра из баклажанов",
-    "recipe": "Традиционная овощная икра с печеными баклажанами, помидорами, луком и сладким перцем.",
-    "price": 220.0,
-    "weight": "280g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/HAptjeh-WDwpWsi-KrOjJnI.jpeg"
-  },
-  {
-    "name": "Северное Сияние",
-    "recipe": "Классический ром и кокосовое молоко с кокосовым сиропом приобретают эффектный оттенок «полярной ночи» благодаря Blue Curaçao. Свежесть ананасового сока оттеняется согревающим ароматом восточных специй.",
-    "price": 250.0,
-    "weight": "250ml",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/zCkgGil-bfqeHra-Sdbyfsx_prepare.jpeg"
-  },
-  {
-    "name": "Магрибская шакшука",
-    "recipe": "Кушанье из трех яиц с добавлением помидоров, болгарского перца, лука, перца чили, зелени и приправ. Подаётся с чиабатта-тостами. (можно добавить ветчину, брынзу)",
-    "price": 250.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/KnIKPpG-PBGJZiJ-tltFSDn.jpeg"
-  },
-  {
-    "name": "Салат с хамоном",
-    "recipe": "Салат с карамелизованной грушей, испанским хамоном и сыром Дор Блю – это оригинальное изысканное блюдо, которое имеет не только безупречный вкус, но и непревзойденный вид.",
-    "price": 380.0,
-    "weight": "220g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/GrOXjDN-BdhzoTQ-CdCCkyB.jpeg"
-  },
-  {
-    "name": "Севиче из лосося",
-    "recipe": "Свежее филе лосося, маринованное в соке лайма с добавлением филе апельсина, красного лука и перца чили. Легкое и освежающее блюдо с тонким балансом сладости, кислинки и пикантности.",
-    "price": 580.0,
-    "weight": "320g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/DXXNGRo-CIvCMkK-GgfEELk.jpeg"
-  },
-  {
-    "name": "Чай из сосновых шишек",
-    "recipe": "Согревающий и восстанавливающий аромат: Насыщенный Иван-чай с глубоким травяным вкусом в основе. Главный акцент – чрезвычайно полезное варенье из сосновых шишек, придающее напитку хвойное наслаждение. Аромат дополняет свежий розмарин, а кедровые орехи дарят легкий маслянистый вкус. Идеально для укрепления иммунитета.",
-    "price": 180.0,
-    "weight": "500ml",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/LlnbJZc-XZeiJiO-pqDHdNt_prepare.jpeg"
-  },
-  {
-    "name": "Блинчики с курицей и грибочками",
-    "recipe": "Блинчики с курицей и грибочками это тонкие, румяные блины с сочной начинкой из куриного филе и ароматных грибочков. Подаются со сливочно-грибным соусом. Сытное и очень вкусное блюдо.",
-    "price": 290.0,
-    "weight": "370g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/AesxhSQ-qkjJnrz-CjrEtUG.jpeg"
-  },
-  {
-    "name": "Салат с угрем",
-    "recipe": "Подаётся на подушке из микса зелени, авокадо и стружки тунца.",
-    "price": 480.0,
-    "weight": "280g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/yUqNvSj-JcWMIoD-tHJzCcG.jpeg"
-  },
-  {
-    "name": "Сет холодных снеков",
-    "recipe": "Микс из испанского хамона, копченого сыра сулугуни, бастурмы, копченых свиных ушек и черри.",
-    "price": 650.0,
-    "weight": "320g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/DJHLVyv-buekDUO-zKZeman.jpeg"
-  },
-  {
-    "name": "Ленивые вареники с вишней",
-    "recipe": "Вареники подаются под нежным кремом и вишневым соусом.",
-    "price": 250.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/DpXptHm-TKHEGph-COqXeIr.jpeg"
-  },
-  {
-    "name": "Вителло Тоннато",
-    "recipe": "Вителло Тонато – блюдо из тонко нарезанных кусочков из филе телятины, приправленных соусом Вителло, подается с каперсами и сыром Пармезан.",
-    "price": 330.0,
-    "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/BJzlUCh-xMtGyGD-rpKCNSq.jpeg"
-  },
-  {
-    "name": "Сырники с белым шоколадом",
-    "recipe": "Нежные сырники подаются под соусом из белого шоколада и соленой карамели.",
-    "price": 320.0,
-    "weight": "300g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/QQflJNF-HpPofCU-GTgWlbD.jpeg"
-  },
-  {
-    "name": "Тар тар из телятины",
-    "recipe": "Подается с гренками, зеленым лучком и сыром Пармезан.",
-    "price": 580.0,
-    "weight": "280g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/wkGkPjI-IHDumCw-yhmUHFC.jpeg"
-  },
-  {
-    "name": "Французский тост",
-    "recipe": "Десерт на основе воздушного бриоша, обжаренного до золотистой корочки, украшен свежей клубникой. Сверху шарик ванильного мороженого и тонкая фундучная стружка. Подаётся с легкой карамельной ноткой.",
-    "price": 220.0,
-    "weight": "250g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/zFjqbIN-ZzePzdm-GcYrsDx.jpeg"
-  },
-  {
-    "name": "Хумус с креветкой",
-    "recipe": "Классический хумус подается с обжаренной креветкой и тортильей.",
-    "price": 250.0,
-    "weight": "270g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/waHGlWC-axaoTnj-nldTJsC.jpeg"
-  },
-  {
-    "name": "Блинчики Креп Сюзетт",
-    "recipe": "Креп Сюзетт – это изящные, блинчики с заварным кремом, пропитанные апельсиновым соусом и имеющие легкий аромат цитруса. Они дарят свежий и яркий вкус в каждом кусочке.",
-    "price": 290.0,
-    "weight": "370g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/BJMIqdk-IQCBhcx-KFrwbCq.jpeg"
-  },
-  {
-    "name": "Брускет с хамоном",
-    "recipe": "Хрустящая чиабатта с испанским хамоном, подается на подушке из томатной сальсы.",
-    "price": 230.0,
-    "weight": "230g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/MDSeqae-xXVOdAM-fFRtzKL.jpeg"
-  },
-  {
-    "name": "Соленья",
-    "recipe": "Подается с капустой квашеной, огурчиками солеными, яблочками мочеными, помидорами квашеными, чесноком маринованным и лепестками капусты.",
-    "price": 350.0,
-    "weight": "650g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/CkvhMnp-kWevlkf-yzeWWbt.jpeg"
-  },
-  {
-    "name": "Сало Шахматы",
-    "recipe": "Подаётся с перцем чили, перцем халапенье и свежей зеленью.",
-    "price": 280.0,
-    "weight": "200g",
-    "image_url": "https://cdn-media.choiceqr.com/prod-eat-moondeer/menu/HBIbjIC-yICFKYF-ZedtzUH.jpeg"
+    "name": "Красная икра",
+    "recipe": "подается со сливочным маслом и бородинским хлебом",
+    "price": 519.0,
+    "weight": "50g",
+    "image_url": "https://cdn-media.choiceqr.com/prod-eat-probka-rest/menu/CeoOgWa-HYzIHlT-HaqohRq.jpeg"
   }
 ]
