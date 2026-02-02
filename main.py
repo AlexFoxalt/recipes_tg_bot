@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import random
+import time
 from pathlib import Path
 
 from aiogram import Bot, Dispatcher, F, types
@@ -11,7 +12,7 @@ from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.enums import ParseMode
+from aiogram.enums.parse_mode import ParseMode
 from openai import AsyncOpenAI
 
 from prompts import SYSTEM_PROMPT, USER_PROMPT
@@ -89,11 +90,16 @@ async def handle_try_next(message: types.Message, state: FSMContext) -> None:
     )
 
 
-async def evaluate_answer_with_model(
-    dish_name: str, official_recipe: str, user_recipe: str, price: str, weight: str
+async def stream_evaluation_to_message(
+    status_message: types.Message,
+    dish_name: str,
+    official_recipe: str,
+    user_recipe: str,
+    price: str,
+    weight: str,
 ) -> str:
     """
-    Use OpenAI model to compare user's recipe with the official one and rate it.
+    Stream model response token-by-token and edit the Telegram message as text arrives.
     """
     if openai_client is None:
         logger.error("OpenAI client is not initialized")
@@ -113,34 +119,49 @@ async def evaluate_answer_with_model(
         weight=weight,
     )
 
+    buffer: list[str] = []
+    last_sent_text = ""
+    last_update = time.monotonic()
+    min_interval = 0.4
+    min_chars = 20
+
     try:
-        response = await openai_client.chat.completions.create(
+        stream = await openai_client.chat.completions.create(
             model="gpt-5-mini",
             messages=[
-                {
-                    "role": "system",
-                    "content": SYSTEM_PROMPT,
-                },
+                {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": prompt},
             ],
+            stream=True,
         )
+        async for event in stream:
+            delta = event.choices[0].delta.content or ""
+            if not delta:
+                continue
+            buffer.append(delta)
+            current_text = "".join(buffer).strip()
+            now = time.monotonic()
+            if len(current_text) - len(last_sent_text) >= min_chars or now - last_update >= min_interval:
+                if current_text and current_text != last_sent_text:
+                    await status_message.edit_text(current_text)
+                    last_sent_text = current_text
+                    last_update = now
     except Exception as exc:  # noqa: BLE001
         logger.exception("OpenAI evaluation failed: %s", exc)
         return "Не удалось получить оценку от модели.\nПопробуй, пожалуйста, другое блюдо чуть позже."
 
-    content = (response.choices[0].message.content or "").strip()
-    logger.debug("OpenAI evaluation response: %s", content)
-    return content
+    final_text = "".join(buffer).strip()
+    if final_text and final_text != last_sent_text:
+        await status_message.edit_text(final_text, parse_mode=ParseMode.MARKDOWN)
+    logger.debug("OpenAI evaluation response: %s", final_text)
+    return final_text
 
 
 async def handle_answer(message: types.Message, state: FSMContext) -> None:
     """
     Handle user's recipe answer.
     """
-    await message.answer(
-        "Проверяю ответ...",
-        reply_markup=MAIN_KEYBOARD,
-    )
+    status_message = await message.answer("Проверяю ответ...")
     user_id = message.from_user.id if message.from_user else "unknown"
     data = await state.get_data()
     dish_name = data.get("current_dish_name")
@@ -172,7 +193,8 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
         dish.get("name", "Unknown dish"),
     )
 
-    evaluation = await evaluate_answer_with_model(
+    await stream_evaluation_to_message(
+        status_message,
         dish.get("name", "Неизвестное блюдо"),
         official_recipe,
         user_recipe,
@@ -182,23 +204,20 @@ async def handle_answer(message: types.Message, state: FSMContext) -> None:
 
     image_url = dish.get("image_url")
 
-    # Send only model response and image (if available)
+    # Send image separately after streaming response (if available)
     if image_url:
         logger.debug(
             "Sending evaluation with image for dish '%s' to user %s",
             dish.get("name"),
             user_id,
         )
-        await message.answer_photo(
-            photo=image_url, caption=evaluation, reply_markup=MAIN_KEYBOARD, parse_mode=ParseMode.MARKDOWN
-        )
+        await message.answer_photo(photo=image_url, reply_markup=MAIN_KEYBOARD)
     else:
         logger.debug(
             "Sending evaluation without image for dish '%s' to user %s",
             dish.get("name"),
             user_id,
         )
-        await message.answer(evaluation, reply_markup=MAIN_KEYBOARD)
 
     # Clear state so user can start a new round by pressing the button again
     await state.clear()
